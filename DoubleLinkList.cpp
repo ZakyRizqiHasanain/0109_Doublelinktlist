@@ -141,6 +141,45 @@ public:
         // Step 1: Mark first node as currentnode
         node *currentnode = start;
 
-        
+        // Step 2: Repeat until currentnode == NULL
+        cout << "\nRecords in ascending order of roll number are: \n";
+        int i = 0;
+        while (currentnode != NULL)
+        {
+            cout << i + 1 << ". " << currentnode->noMhs << " " << endl;
+
+            //Step 3: Move to next node
+            currentnode = currentnode->next;
+            i++;
+        }
     }
-};
+    void revtraverse()
+    {
+        if (start == NULL)
+        {
+            cout << "\nList is empty" << endl;
+            return;
+        }
+
+        //step 1: Move to last node
+        node *currentnode = start;
+        int i = 0;
+        while (currentnode->next != NULL)
+        {
+            currentnode = currentnode->next;
+            i++;
+        }
+
+        // step 2: traverse backward 
+        cout << "\nRecord in descending order of roll number are: \n";
+        while (currentnode != NULL)
+        {
+            cout << i + 1 << ". " << currentnode->noMhs << " " << endl;
+
+            //Step 3: Move to previous node
+            currentnode = currentnode->prev;
+            i--;
+        }
+    }
+
+   
