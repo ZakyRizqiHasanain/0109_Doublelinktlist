@@ -41,6 +41,9 @@ public:
                 cout << " \nDuplicate number not allowed" << endl;
                 return;
             }
+            // Step 4: newnode.next = start
+            newnode->next = start;
+
             
         }
     }
