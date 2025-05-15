@@ -114,7 +114,12 @@ public:
                 start->prev = NULL; // Step 2b: start.prev = NULL
             }
         }
-        
+        else
+        {
+            // Step 3: Link previous node to next of current
+            current->prev->next = current->next;
 
+           
+        
     }
 };
