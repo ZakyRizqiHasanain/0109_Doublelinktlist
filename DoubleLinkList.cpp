@@ -130,5 +130,17 @@ public:
         
     }
 
-    
+    void tranverse()
+    {
+        if (start == NULL)
+        {
+            cout << "\nmList is empty" << endl;
+            return;
+        }
+
+        // Step 1: Mark first node as currentnode
+        node *currentnode = start;
+
+        
+    }
 };
