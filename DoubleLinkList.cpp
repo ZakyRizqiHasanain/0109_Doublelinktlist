@@ -119,7 +119,12 @@ public:
             // Step 3: Link previous node to next of current
             current->prev->next = current->next;
 
-           
+            //Step 4: if current is not the last node
+            if (current->next != NULL)
+                current->next->prev = current->prev;
+        }
+
+       
         
     }
 };
