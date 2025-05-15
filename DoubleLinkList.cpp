@@ -56,6 +56,9 @@ public:
             return;
         }
     
-        
+        // Insert in between node
+        // Step 8: Locate position for insertion
+        node *current = start;
+        while (current->next != NULL && current->next->noMhs < nim);
     }
 };
