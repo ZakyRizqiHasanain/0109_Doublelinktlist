@@ -87,6 +87,25 @@ public:
             cout << "\nLisy is empty" << endl;
             return;
         }
+        
+        cout << "Enter the NIM must be deleted: ";
+        int rollno;
+        cin >> rollno;
+
+        node *current = start;
+        // Step 1: tranverse the list to find the node
+        while (current != NULL && current->noMhs != rollno)
+        {
+            current = current->next;
+        }
+
+        if (current == NULL)
+        {
+            cout << "Record not found" << endl;
+            return;
+        }
+
+    
 
     }
 };
