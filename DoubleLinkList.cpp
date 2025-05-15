@@ -51,6 +51,11 @@ public:
             // Step 6: newnode.prev = NULL
             newnode->prev = NULL;
 
-           
+            // Step 7: Start = newnode
+            start = newnode;
+            return;
+        }
+    
+        
     }
 };
