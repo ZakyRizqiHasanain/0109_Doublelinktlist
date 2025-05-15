@@ -79,4 +79,14 @@ public:
             current->next->prev = newnode; // Step 9c: current.next.prev = newnode
         current->next = newnode; // Step 9d: current.next = newNode        
     }
+
+    void hapus()
+    {
+        if (start == NULL)
+        {
+            cout << "\nLisy is empty" << endl;
+            return;
+        }
+
+    }
 };
